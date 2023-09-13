@@ -25,3 +25,16 @@ Content-Type: application/json
 {
     "prompt": "backend, technologies, videos, class"
 }
+
+###
+
+# @name generate-ai-completion
+
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "93265a51-2bce-4e3d-9ae3-19e8f1457e0a",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription} '''"
+}
